@@ -190,7 +190,7 @@ void write_valid_spot(std::ofstream& fout) {
     int max=-999999;
     for(auto c:next_valid_spots){
         Othello n(board,c);
-        int val=n.minimax(7, -999999, 999999);
+        int val=n.minimax(6, -999999, 999999);
         if(val>max){
             max=val;
             best_move=c;
